@@ -1,3 +1,10 @@
+<% if @name == nil %>
+<form action="/named-cat">
+  name: <input type="text" name="name">
+  eye: <input type="text" name="eye">
+  <input type="submit" value="Submit">
+</form>
+<% end %>
 <% if @name %>
 <h1> My name is <%= @name %>. My eyes are <%= @eye %>. </h1>
 <% end %>
